@@ -6,16 +6,31 @@ const textoResultado= document.querySelector(".texto-resultado");
 
 const perguntas =[
     {
-        enunciado: "Um ponto positivo para a falta de professore nas escolas"
+        enunciado: "como a tecnologia substitui o ser humano"
         alternativas: [
             {
                 texto: "isso é assustador"
-                afirmacao:"A falta de professores nas escolas sobrecarrega os educadores existentes, reduzindo a qualidade do ensino e o suporte individual para os alunos, o que pode levar a um desempenho acadêmico inferior."
+                afirmação:"À medida que máquinas e sistemas de IA assumem funções antes realizadas por pessoas, pode ocorrer desemprego e uma necessidade crescente de requalificação para novas funções"
             }
             {
                 texto:"isso é maravilhoso"
-                afirmacao:"A falta de professores pode incentivar a inovação no ensino e promover a autonomia dos alunos "
+                afirmação:" o aumento da eficiência e precisão, máquinas e sistemas de IA podem realizar tarefas repetitivas e complexas com maior rapidez e exatidão, resultando em melhores resultados e maior produtividade.
+            }      
+        ]
+    }
+    {
+        enunciado:"Quais os benificios da substituicao do ser humano pela tecnologia"
+        alternativas:[
+            {
+                texto:""
+                afirmação:"maior eficiência, redução de erros, segurança melhorada, operação contínua, redução de custos e estímulo à inovação"
+            }
+            {
+                texto:""
+                afirmação:"desemprego, desigualdade social, dependência tecnológica, perda de habilidades e impactos psicológicos como estresse e insegurança financeira."
             }
         ]
     }
-]
+    {
+        enunciado:
+    }
