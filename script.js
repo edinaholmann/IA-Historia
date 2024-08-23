@@ -22,24 +22,24 @@ const perguntas = [
         enunciado:"Quais os benificios da substituicao do ser humano pela tecnologia"
         alternativas:[
             {
-                texto:""
+                texto:"ponto positivo"
                 afirmacao:"maior eficiência, redução de erros, segurança melhorada, operação contínua, redução de custos e estímulo à inovação"
             }
             {
-                texto:""
+                texto:"ponto negativo"
                 afirmacao:"desemprego, desigualdade social, dependência tecnológica, perda de habilidades e impactos psicológicos como estresse e insegurança financeira."
             }
         ]
     }
-    {          enunciado: 
+    {   enunciado:"Como você vê a Inteligência Artificial"
         alternativas: [
             {
-                texto:
-                afirmacao:
+                texto:"ponto positivo"
+                afirmacao:"Eficiência, Medicina, Educação, Ambiente, Acessibilidade, Segurança, Pesquisa"
             }
             {
-                texto:
-                afirmacao:
+                texto:"ponto negativo"
+                afirmacao:"Privacidade, Viés, Desemprego, Segurança, Controle, Dependência"
             }
         ]
           
@@ -75,3 +75,38 @@ const perguntas = [
 
     }
 ]
+
+let atual= 0;
+let erguntaAtual;
+let historiaFinal = "";
+
+function mostraPergunta(){
+    if (atual >= perguntas.length) {
+        mostrarResultado();
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostarAlternativas();
+}
+function mostrarAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click",() =>)respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAltenativas);
+    }
+}
+        function resostaSelecionado(opcaoSelecionada) {
+            const afirmacoes = opcaoSelecionada.afirmacao;
+            historiafinal += afirmacoes + " ";
+            atual++;
+            mostrarPergunta();
+        }
+        function mostrarResultado() {
+            caixaPergunta. textContent = "Em 2049...";
+            textoResultado.textContent ="";
+        }
+        
+        mostrarPerunta();
